@@ -1,0 +1,152 @@
+/* .tree-menu{
+    margin-left: 16px;
+} */
+
+.example-tree-invisible {
+    display: none;
+}
+
+/* .tree-menu ul,
+.tree-menu li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+} */
+/* .tree-menu ul{
+    border-left: 1px solid black;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: -20px;
+} */
+
+.menu-title{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1ch;
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.text-grey{
+    color: rgba(0,0,0,.7);
+}
+
+.title-center{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.btn-custom{
+    color: rgba(37,172,224,1);
+    margin-right: 20px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.btn-custom:active{
+    box-shadow: none !important;
+    background-color: rgba(37,172,224,1);
+    color: white;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.mat-toolbar-row{
+    background-color: rgba(239, 239, 239, 1);
+}
+
+.mat-grid-list{
+    padding-left: 10px;
+}
+
+/* .mat-tree{
+    background-color: rgba(239, 239, 239, 1);
+} */
+.mat-tree-node {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 24px;
+    flex: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.mat-tree-button{
+    width: 100%;
+    text-align: left;
+}
+
+/* .test{
+    border-left: 1px solid;
+    position: relative;
+    content: "";
+}
+
+.test:after{
+    border-left: 2px solid red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+} */
+  
+.example-tree-progress-bar {
+    margin-left: 30px;
+  }
+  
+  .example-tree-nested-node {
+    padding-left: 30px;
+  }
+  
+  mat-tree {
+    margin-left: 40px;
+  }
+  .mat-tree-node {
+    padding: 0;
+    background-color: white;
+  }
+  
+  .mat-nested-tree-node {
+    top: -24px;
+  }
+  
+  ul, li { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;  
+  }
+  
+  li.example-tree-container {
+    border-bottom: 0;
+  }
+  
+  ul { 
+    padding-left: 40px; 
+  }
+  
+  li { 
+    padding-left: 40px;
+    border: 1px solid grey;
+    border-width: 0 0 1px 1px; 
+    position: relative;
+    top: -24px;
+  }
+  
+  li.mat-tree-node,
+  li div { 
+    margin: 0;
+    position: relative;
+    top: 24px; 
+  }
+  
+  li ul {
+    border-top: 1px solid grey;
+    margin-left: -40px;
+    padding-left: 60px;
+  }
+  
+  .mat-icon-button {
+    z-index: 100;
+  } 
+  
+.mat-tree-button{
+    z-index: 100;
+}
+  

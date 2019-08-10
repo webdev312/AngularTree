@@ -1,0 +1,47 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span class="menu-title text-grey title-center">SOLUTION AREA</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <button mat-raised-button [disableRipple]="true" class="btn-custom">EXPAND ALL</button>
+        <button mat-raised-button [disableRipple]="true" class="btn-custom">COLLAPSE ALL</button>
+        <span class="spacer"></span>
+        <button mat-raised-button [disableRipple]="true" class="btn-custom">SHARE</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div style="padding-top: 24px;">
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="tree-menu">
+        <mat-nested-tree-node *matTreeNodeDef="let node" matTreeNodeToggle style="overflow: visible">
+            <li>
+                <!-- <button mat-icon-button disabled></button> -->
+                <div class="mat-tree-node">{{node.name}}</div>
+            </li>
+        </mat-nested-tree-node>
+        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+            <li class="example-tree-container">
+                <div class="mat-tree-node">
+                    <button mat-button matTreeNodeToggle [disableRipple]="true"
+                            [attr.aria-label]="'toggle ' + node.name" class="mat-tree-button">
+                    <mat-icon class="mat-icon-rtl-mirror">
+                        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                    </mat-icon>
+                    <span>{{node.name}}</span>
+                    </button>
+                </div>
+                <ul class="example-tree-nested-node">
+                    <div  *ngIf="treeControl.isExpanded(node)">
+                    <ng-container matTreeNodeOutlet></ng-container>
+                    </div>
+                </ul>
+            </li>
+        </mat-nested-tree-node>
+    </mat-tree>
+</div>
+<!-- <mat-grid-list cols="2">
+    <mat-grid-tile [colspan]="1">
+        
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">b</mat-grid-tile>
+</mat-grid-list> -->
+
+      
