@@ -15,6 +15,10 @@ body{
 }
 
 .mat-nested-tree-node:last-child > li > ul{
-    border-left: 1px solid white;
+    border-left: 1px solid rgba(239, 239, 239, 1) !important;
     margin-left: -41px !important;
+}
+
+.mat-tree{
+    margin-left: -20px !important;
 }

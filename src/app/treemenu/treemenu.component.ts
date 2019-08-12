@@ -6,36 +6,70 @@ interface MenuNode {
   name: string;
   children?: MenuNode[];
   color?: string;
+  bordercolor?: string;
 }
 
 const TREE_DATA: MenuNode[] = [
   {
-    name: 'Fruit',
-    children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
-    ]
-  }, {
-    name: 'Vegetables',
+    name: 'TAGNOS',
+    color: '#25ace0',
     children: [
       {
-        name: 'Green',
+        name: 'Fruit',
+        color: '#243e8f',
+        bordercolor: '#25ace0',
         children: [
-          {name: 'Broccoli'},
-          {name: 'Brussel sprouts'},
-        ],
-        color: "#000"
+          {
+            name: 'Apple',
+            bordercolor: '#243e8f'
+          },
+          {
+            name: 'Banana',
+            bordercolor: '#243e8f'
+          },
+          {
+            name: 'Fruit loops',
+            bordercolor: '#243e8f'
+          },
+        ]
       }, {
-        name: 'Orange',
+        name: 'Vegetables',
+        color: '#243e8f',
+        bordercolor: '#25ace0',
         children: [
-          {name: 'Pumpkins'},
-          {name: 'Carrots'},
-        ],
-        color: "#000"
+          {
+            name: 'Green',
+            color: '#a7cd45',
+            bordercolor: '#243e8f',
+            children: [
+              {
+                name: 'Broccoli',
+                bordercolor: '#a7cd45'
+              },
+              {
+                name: 'Brussel sprouts',
+                bordercolor: '#a7cd45'
+              },
+            ],
+          }, {
+            name: 'Orange',
+            color: '#a7cd45',
+            bordercolor: '#243e8f',
+            children: [
+              {
+                name: 'Pumpkins',
+                bordercolor: '#a7cd45'
+              },
+              {
+                name: 'Carrots',
+                bordercolor: '#a7cd45'
+              },
+            ],
+          },
+        ]
       },
     ]
-  },
+  }
 ];
 
 @Component({
@@ -43,12 +77,24 @@ const TREE_DATA: MenuNode[] = [
   templateUrl: './treemenu.component.html',
   styleUrls: ['./treemenu.component.css']
 })
+
+
+
 export class TreemenuComponent implements OnInit {
   treeControl = new NestedTreeControl<MenuNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<MenuNode>();
 
   constructor() {
     this.dataSource.data = TREE_DATA;
+    this.treeControl.dataNodes = TREE_DATA;
+  }
+
+  onExpandAll(){
+    this.treeControl.expandAll();
+  }
+
+  onCollapseAll(){
+    this.treeControl.collapseAll();
   }
 
   hasChild = (_: number, node: MenuNode) => !!node.children && node.children.length > 0;

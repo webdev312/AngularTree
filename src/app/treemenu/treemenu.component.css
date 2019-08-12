@@ -57,17 +57,21 @@
     padding-left: 10px;
 }
 
-/* .mat-tree{
+.mat-tree{
     background-color: rgba(239, 239, 239, 1);
-} */
+}
 .mat-tree-node {
+    z-index: 100;
+    margin-top: 4px;
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
-    min-height: 48px;
+    min-height: 36px;
     padding: 0 24px;
     flex: 1;
     overflow: hidden;
     word-wrap: break-word;
+    border-radius: 4px;
 }
 .mat-tree-button{
     width: 100%;
@@ -89,64 +93,92 @@
   
 .example-tree-progress-bar {
     margin-left: 30px;
-  }
+}
   
-  .example-tree-nested-node {
+.example-tree-nested-node {
     padding-left: 30px;
-  }
+}
   
-  mat-tree {
+.mat-tree {
     margin-left: 40px;
-  }
-  .mat-tree-node {
+}
+.mat-tree-node {
     padding: 0;
     background-color: white;
-  }
+}
   
-  .mat-nested-tree-node {
+.mat-nested-tree-node {
     top: -24px;
-  }
+}
   
-  ul, li { 
+ul, li { 
     list-style: none; 
     margin: 0; 
     padding: 0;  
-  }
+}
   
-  li.example-tree-container {
+li.example-tree-container {
     border-bottom: 0;
-  }
+    padding-top: 8px;
+}
+
+.example-tree-container-child{
+    padding-top: 8px;
+}
   
-  ul { 
+ul { 
     padding-left: 40px; 
-  }
+}
   
-  li { 
+li { 
     padding-left: 40px;
     border: 1px solid grey;
     border-width: 0 0 1px 1px; 
     position: relative;
-    top: -24px;
-  }
+    top: -18px;
+}
   
-  li.mat-tree-node,
-  li div { 
+li.mat-tree-node,
+li div { 
     margin: 0;
     position: relative;
-    top: 24px; 
-  }
+    top: 18px;
+}
   
-  li ul {
+li ul {
     border-top: 1px solid grey;
     margin-left: -40px;
     padding-left: 60px;
-  }
+    width: 100px;
+}
   
-  .mat-icon-button {
+.mat-icon-button {
     z-index: 100;
-  } 
+} 
   
 .mat-tree-button{
     z-index: 100;
 }
+
+.menu-item{
+    /* margin-top: 4px !important; */
+    /* margin-bottom: 4px !important; */
+}
   
+.mat-tree > .mat-nested-tree-node > li.example-tree-container {
+    border: none !important;
+}
+.mat-tree > .mat-nested-tree-node > li.example-tree-container > ul.example-tree-nested-node{
+    border: none !important;
+}
+.menu-item, .mat-tree-node{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    width: 300px;
+}
+.mat-button{
+    height: 36px !important;
+}
+.mat-tree-child-last{
+    font-weight: 500;
+    margin-left: 20px;
+}
