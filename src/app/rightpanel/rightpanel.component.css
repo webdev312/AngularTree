@@ -21,7 +21,7 @@
     margin-bottom: 10px;
 }
 
-.mat-card-textarea{
+.mat-card-textarea, .mat-card-textarea-opt{
     width: calc(100% - 18px);
     height: 120px;
     border-radius: 4px;
@@ -33,7 +33,25 @@
     color: rgba(0,0,0,.7);
 }
 
-.mat-card-textarea:focus{
+.mat-card-textarea-opt{
+    margin-bottom: 10px;
+}
+
+.mat-radio-button{
+    width: 120px;
+}
+
+.mat-group-label{
+    float: left;
+    width: 80px;
+    margin-top: 2px;
+}
+
+.mat-group-div{
+    margin-bottom: 6px;
+}
+
+.mat-card-textarea:focus, .mat-card-textarea-opt:focus{
     outline: none;
 }
 
