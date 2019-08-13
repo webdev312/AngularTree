@@ -41,12 +41,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { HeaderComponent } from './header/header.component';
+import { RightpanelComponent } from './rightpanel/rightpanel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TreemenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    RightpanelComponent
   ],
   imports: [
     BrowserAnimationsModule,

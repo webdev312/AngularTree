@@ -72,25 +72,20 @@
     overflow: hidden;
     word-wrap: break-word;
     border-radius: 4px;
+    cursor: pointer;
 }
 .mat-tree-button{
     width: 100%;
     text-align: left;
+    z-index: 100;
 }
-
-/* .test{
-    border-left: 1px solid;
-    position: relative;
-    content: "";
+.mat-tree-button:focus, .mat-tree-child-last:focus{
+    background-color: var(--node-focus-color);
+    color: white;
 }
+.mat-tree-button:hover{
 
-.test:after{
-    border-left: 2px solid red;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-} */
-  
+}
 .example-tree-progress-bar {
     margin-left: 30px;
 }
@@ -154,17 +149,8 @@ li ul {
   
 .mat-icon-button {
     z-index: 100;
-} 
-  
-.mat-tree-button{
-    z-index: 100;
 }
-
-.menu-item{
-    /* margin-top: 4px !important; */
-    /* margin-bottom: 4px !important; */
-}
-  
+ 
 .mat-tree > .mat-nested-tree-node > li.example-tree-container {
     border: none !important;
 }
@@ -180,5 +166,8 @@ li ul {
 }
 .mat-tree-child-last{
     font-weight: 500;
-    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }

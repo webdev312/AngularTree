@@ -1,17 +1,26 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --node-focus-color: #fff;
+}
+
 body{
     margin: 0;
     background-color: rgba(239, 239, 239, 1);
 }
 
-.mat-grid-tile .mat-figure {
+.mat-grid-tile:first-child .mat-figure {
    justify-content: flex-start !important ;
    align-items: flex-start !important;
 }
+.mat-grid-tile:last-child .mat-figure {
+    justify-content: flex-end !important ;
+    align-items: flex-start !important;
+ }
 
 .mat-button-focus-overlay{
     background-color: #fff !important;
+    opacity: 0 !important;
 }
 
 .mat-nested-tree-node:last-child > li > ul{
