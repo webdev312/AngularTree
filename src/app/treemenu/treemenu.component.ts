@@ -17,11 +17,11 @@ const TREE_DATA: MenuNode[] = [
     color: '#25ace0',
     title: 'company',
     rpanel: [
-      {id: 1, title:'what does tagnos do', placeholder:'impact'},
-      {id: 1, title:'benefits', placeholder:'impact'},
-      {id: 2, title:'media', src:[
+      {id: 1, title:'what does tagnos do', placeholder:'Impact'},
+      {id: 1, title:'benefits', placeholder:'Impact'},
+      {id: 2, title:'media', slides:[
         {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24790-752x499.jpg'},
-        {type: 2, link: 'https://www.youtube.com/watch?v=RHLknisJ-Sg'},
+        {type: 2, link: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'},
         {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24792-752x499.jpg'}
       ]}
     ],
@@ -132,7 +132,7 @@ export class TreemenuComponent implements OnInit {
   }
 
   onSetTitle(node){
-    this.strTitle = node.title.toUpperCase();
+    this.strTitle = node.title;
   }
 
   onSetRightPanel(node){

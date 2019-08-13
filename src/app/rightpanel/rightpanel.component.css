@@ -1,0 +1,48 @@
+.report-panel{
+    margin-right: 36px;
+    margin-top: 8px;
+}
+
+.mat-card{
+    min-width: 350px;
+    min-height: 180px;
+    max-height: 180px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1ch;
+    color: rgba(0,0,0,.7);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mat-card-header-control{
+    margin-left: -32px;
+    margin-bottom: 10px;
+}
+
+.mat-card-textarea{
+    width: calc(100% - 18px);
+    height: 120px;
+    border-radius: 4px;
+    background-color: rgba(239, 239, 239, 1);
+    border-color: rgba(239, 239, 239, 1);
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 14px;
+    color: rgba(0,0,0,.7);
+}
+
+.mat-card-textarea:focus{
+    outline: none;
+}
+
+.mat-slide-content{
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    resize: none !important;
+}
+

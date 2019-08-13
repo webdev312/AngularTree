@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @Component({
   selector: 'app-rightpanel',
@@ -15,6 +16,7 @@ export class RightpanelComponent implements OnInit {
 
   ngOnChanges(){
     console.log(this.ctrlData);
+    
   }
 
 }

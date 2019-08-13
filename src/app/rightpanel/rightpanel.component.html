@@ -1,1 +1,24 @@
-<p>rightpanel works!</p>
+<div class="report-panel">
+    <mat-card *ngFor="let control of ctrlData" class="mat-card">
+        <mat-card-header class="mat-card-header-control">
+            {{control.title}}
+        </mat-card-header>
+        <mat-card-content *ngIf="control.id == 1">
+            <textarea matInput placeholder="{{control.placeholder}}" class="mat-card-textarea"></textarea>
+        </mat-card-content>
+        <mat-card-content *ngIf="control.id == 2">
+            <mat-carousel maxWidth="400px" proportion="35" slides="3" [hideIndicators]="false" color="primary" [autoplay]="false">
+                <mat-carousel-slide
+                    #matCarouselSlide
+                    class="mat-slide-tab"
+                    *ngFor="let slide of control.slides; let i = index"
+                    overlayColor="#efefef">
+                    <img *ngIf="slide.type == 1" src="{{slide.link}}" class="mat-slide-content">
+                    <video *ngIf="slide.type == 2" controls class="mat-slide-content">
+                        <source src="{{slide.link}}" type="video/mp4">
+                    </video>
+                </mat-carousel-slide>
+            </mat-carousel>
+        </mat-card-content>
+    </mat-card>
+</div>

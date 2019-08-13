@@ -40,6 +40,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
 import { HeaderComponent } from './header/header.component';
 import { RightpanelComponent } from './rightpanel/rightpanel.component';
 
@@ -88,6 +91,8 @@ import { RightpanelComponent } from './rightpanel/rightpanel.component';
     MatTooltipModule,
     MatTreeModule,
 
+    MatCarouselModule,
+    
     BrowserModule,
     AppRoutingModule,
   ],
