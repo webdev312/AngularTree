@@ -81,7 +81,7 @@ const TREE_DATA: MenuNode[] = [
                 {grouptitle: 'access',
                 groupoptions: [
                   {value: '1', data: 'internal'},
-                  {value: '2', data: 'tableau'}
+                  {value: '2', data: 'tablea'}
                 ]},
               ]},
               {id: 1, title:'what does the screen do', placeholder:'Impact'},
