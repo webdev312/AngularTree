@@ -1,0 +1,127 @@
+{
+	"name": "Tagnos",
+	"type": "company",
+	"info": [
+        {
+            "component_type": "textarea",
+            "title": "what does tagnos do",
+            "placeholder": "abcd"
+        },
+        {
+            "component_type": "textarea",
+            "title": "benefit",
+            "placeholder": "abcd"
+        },
+        {
+            "component_type": "media",
+            "details": [{
+				"name": "screenshot",
+				"type": "png",
+				"src": "companyScreenShot1.png"
+			},
+			{
+				"name": "video",
+				"type": "mp5",
+				"src": "tagnosOverview.mp4"
+			}]
+        }
+    ],
+    "children": [{
+        "name": "OR",
+        "type": "solutionArea",
+        "info":[{
+            "component_type": "textarea",
+            "title": "what does or solution do",
+            "placeholder": "abc"
+        },
+        {
+            "component_type": "textarea",
+            "title": "benefits",
+            "placeholder": "abc"
+        },{
+            "component_type": "media",
+            "details": [{
+				"name": "screenshot",
+				"type": "png",
+				"src": "companyScreenShot1.png"
+			},
+			{
+				"name": "video",
+				"type": "mp5",
+				"src": "tagnosOverview.mp4"
+			}]
+        }],
+        "children": [{
+            "name": "OR Tracking",
+            "type": "product",
+            "info":[{
+                "component_type": "textarea",
+                "title": "what does or solution do",
+                "placeholder": "abc"
+            },
+            {
+                "component_type": "textarea",
+                "title": "benefits",
+                "placeholder": "abc"
+            },{
+                "component_type": "media",
+                "details": [{
+                    "name": "screenshot",
+                    "type": "png",
+                    "src": "companyScreenShot1.png"
+                },
+                {
+                    "name": "video",
+                    "type": "mp5",
+                    "src": "tagnosOverview.mp4"
+                }]
+            }],
+            "children": [{
+                "name": "Screens",
+                "type": "screen",
+                "info":[{
+                    "component_type": "textarea",
+                    "title": "what does the screen do",
+                    "placeholder": "abc"
+                },
+                {
+                    "component_type": "textareastatus",
+                    "title": "roles and users",
+                    "placeholder": "abc",
+                    "status":[
+                        {
+                            "title": "status",
+                            "ga": 1,
+                            "beta": 2
+                        },
+                        {
+                            "title": "access",
+                            "internal": 1,
+                            "tableau": 2
+                        }
+                    ]
+                },{
+                    "component_type": "media",
+                    "details": [{
+                        "name": "screenshot",
+                        "type": "png",
+                        "src": "companyScreenShot1.png"
+                    },
+                    {
+                        "name": "video",
+                        "type": "mp5",
+                        "src": "tagnosOverview.mp4"
+                    }]
+                },{
+                    "component_type": "textarea",
+                    "title": "integrations needed",
+                    "placeholder": "abc"
+                },{
+                    "component_type": "textarea",
+                    "title": "data supported",
+                    "placeholder": "abc"
+                }]
+            }]
+        }]
+    }]
+}

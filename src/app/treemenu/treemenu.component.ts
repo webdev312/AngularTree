@@ -1,9 +1,10 @@
 import {NestedTreeControl} from '@angular/cdk/tree';
 import { Component, OnInit } from '@angular/core';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
+import { HttpserviceService } from '../httpservice.service';
 
 interface MenuNode {
-  name: string;
+  name?: string;
   children?: MenuNode[];
   title?: string;
   rpanel?: any;
@@ -12,7 +13,7 @@ interface MenuNode {
 }
 
 const TREE_DATA: MenuNode[] = [
-  {
+{
     name: 'TAGNOS',
     color: '#25ace0',
     title: 'company',
@@ -152,6 +153,13 @@ const TREE_DATA: MenuNode[] = [
   }
 ];
 
+var treedata : MenuNode = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
+var arrcolor : string[] = [
+  "#25ace0",
+  "#243e8f",
+  "#a7cd45",
+  "#7441a2"
+];
 @Component({
   selector: 'app-treemenu',
   templateUrl: './treemenu.component.html',
@@ -164,9 +172,42 @@ export class TreemenuComponent implements OnInit {
   strTitle: string;
   rPanel: any;
 
-  constructor() {
-    this.dataSource.data = TREE_DATA;
-    this.treeControl.dataNodes = TREE_DATA;
+  constructor(private appSettingsService : HttpserviceService ) {
+    appSettingsService.getJSON().subscribe(data => {
+      var tdata : MenuNode[] = [];
+      tdata.push(this.convertJson2Tree(treedata, data, 0));
+      this.dataSource.data = tdata;
+      this.treeControl.dataNodes = tdata;
+    });
+  }
+  
+  convertJson2Tree(tree, data, depth){
+    if (depth > 0){
+      var arrtree = [];
+      for (var i = 0; i < data.length; i ++){
+        var eachtree : MenuNode = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
+        eachtree.name = data[i].name;
+        eachtree.title = data[i].type;
+        eachtree.rpanel = data[i].info;
+        eachtree.color = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth];
+        eachtree.bordercolor = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth - 1];
+        if (data[i].children != undefined){
+          eachtree.children = this.convertJson2Tree(tree.children, data[i].children, depth+1);
+        }
+        arrtree.push(eachtree);
+      }
+      return arrtree;
+    }else{
+      tree.name = data.name;
+      tree.title = data.type;
+      tree.rpanel = data.info;
+      tree.color = arrcolor[0];
+      tree.bordercolor = arrcolor[0];
+      if (data.children != undefined){
+        tree.children = this.convertJson2Tree(tree, data.children, depth+1);
+      }
+      return tree;
+    }
   }
 
   onExpandAll(){

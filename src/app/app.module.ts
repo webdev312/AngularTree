@@ -45,6 +45,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 import { HeaderComponent } from './header/header.component';
 import { RightpanelComponent } from './rightpanel/rightpanel.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { RightpanelComponent } from './rightpanel/rightpanel.component';
     MatTreeModule,
 
     MatCarouselModule,
+    HttpClientModule,
     
     BrowserModule,
     AppRoutingModule,
