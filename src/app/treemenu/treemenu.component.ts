@@ -10,148 +10,8 @@ interface MenuNode {
   rpanel?: any;
   color?: string;
   bordercolor?: string;
+  isExpanded?: boolean;
 }
-
-const TREE_DATA: MenuNode[] = [
-{
-    name: 'TAGNOS',
-    color: '#25ace0',
-    title: 'company',
-    rpanel: [
-      {id: 1, title:'what does tagnos do', placeholder:'Impact'},
-      {id: 1, title:'benefits', placeholder:'Impact'},
-      {id: 2, title:'media', slides:[
-        {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24790-752x499.jpg'},
-        {type: 2, link: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'},
-        {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24792-752x499.jpg'}
-      ]}
-    ],
-    children: [
-      {
-        name: 'Fruit',
-        color: '#243e8f',
-        title: 'solution area',
-        bordercolor: '#25ace0',
-        rpanel: [
-          {id: 1, title:'what does or solution do', placeholder:'Impact'},
-          {id: 1, title:'benefits', placeholder:'Impact'},
-          {id: 2, title:'media', slides:[
-            {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24798-752x499.jpg'},
-            {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg'},
-            {type: 2, link: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'}
-          ]}
-        ],
-        children: [
-          {
-            name: 'Apple',
-            title: 'product A',
-            color: '#7441a2',
-            bordercolor: '#243e8f',
-            rpanel: [
-              {id: 1, title:'what does the screen do', placeholder:'Impact'},
-              {id: 3, title:'roles and users', placeholder:'Roles and users', 
-              groups: [
-                {grouptitle: 'status',
-                groupoptions: [
-                  {value: '1', data: 'GA'},
-                  {value: '2', data: 'BETA'}
-                ]}
-              ]},
-              {id: 2, title:'media', slides:[
-                {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24798-752x499.jpg'},
-                {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg'},
-                {type: 2, link: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'}
-              ]},
-              {id: 1, title:'integrations needed', placeholder:'Integrations needed'},
-              {id: 1, title:'data supported', placeholder:'Fields supported'},
-            ],
-          },
-          {
-            name: 'Banana',
-            title: 'product B',
-            color: '#7441a2',
-            bordercolor: '#243e8f',
-            rpanel: [
-              {id: 3, title:'roles and users', placeholder:'Roles and users', 
-              groups: [
-                {grouptitle: 'status',
-                groupoptions: [
-                  {value: '1', data: 'GA'},
-                  {value: '2', data: 'BETA'}
-                ]},
-                {grouptitle: 'access',
-                groupoptions: [
-                  {value: '1', data: 'internal'},
-                  {value: '2', data: 'tableau'}
-                ]},
-              ]},
-              {id: 1, title:'what does the screen do', placeholder:'Impact'},
-              {id: 2, title:'media', slides:[
-                {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24798-752x499.jpg'},
-                {type: 1, link: 'http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg'},
-                {type: 2, link: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'}
-              ]},
-              {id: 1, title:'integrations needed', placeholder:'Integrations needed'},
-              {id: 1, title:'data supported', placeholder:'Fields supported'},
-            ],
-          },
-          {
-            name: 'Fruit loops',
-            title: 'product C',
-            color: '#7441a2',
-            bordercolor: '#243e8f'
-          },
-        ]
-      }, {
-        name: 'Vegetables',
-        color: '#243e8f',
-        bordercolor: '#25ace0',
-        title: 'solution area',
-        children: [
-          {
-            name: 'Green',
-            color: '#a7cd45',
-            title: 'product d',
-            bordercolor: '#243e8f',
-            children: [
-              {
-                name: 'Broccoli',
-                title: 'product d - test view 1',
-                color: '#7441a2',
-                bordercolor: '#a7cd45'
-              },
-              {
-                name: 'Brussel sprouts',
-                title: 'product d - test view 2',
-                color: '#7441a2',
-                bordercolor: '#a7cd45'
-              },
-            ],
-          }, {
-            name: 'Orange',
-            color: '#a7cd45',
-            title: 'product e',
-            bordercolor: '#243e8f',
-            children: [
-              {
-                name: 'Pumpkins',
-                title: 'product e - test view x',
-                color: '#7441a2',
-                bordercolor: '#a7cd45'
-              },
-              {
-                name: 'Carrots',
-                title: 'product e - test view y',
-                color: '#7441a2',
-                bordercolor: '#a7cd45'
-              },
-            ],
-          },
-        ]
-      },
-    ]
-  }
-];
 
 var treedata : MenuNode[] = [];
 var arrcolor : string[] = [
@@ -179,8 +39,7 @@ export class TreemenuComponent implements OnInit {
       this.treeControl.dataNodes = treedata;
       this.onSetTitle(treedata[0]);
       this.onSetRightPanel(treedata[0]);
-
-      console.log(treedata);
+      this.treeControl.expand(treedata[0]);
     });
   }
   

@@ -16,7 +16,7 @@
                 <mat-nested-tree-node *matTreeNodeDef="let node" matTreeNodeToggle style="overflow: visible">
                     <li class="example-tree-container-child" [style.borderColor] = "node.bordercolor">
                         <!-- <button mat-icon-button disabled></button> -->
-                        <div class="mat-tree-node" (mousedown)="onSetColor(node)" (click)="onSetTitle(node)" style="border-left: 14px solid #7441a2;">
+                        <div class="mat-tree-node" (mousedown)="onSetColor(node)" (click)="onSetTitle(node)" [style.borderLeft]="'14px solid' + node.color">
                             <button mat-button [disableRipple]="true" class="mat-tree-child-last">{{node.name}}</button>
                         </div>
                     </li>
