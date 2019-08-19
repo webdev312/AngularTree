@@ -14,15 +14,16 @@
         },
         {
             "component_type": "media",
+            "title": "media",
             "details": [{
 				"name": "screenshot",
 				"type": "png",
-				"src": "companyScreenShot1.png"
+				"src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24790-752x499.jpg"
 			},
 			{
 				"name": "video",
-				"type": "mp5",
-				"src": "tagnosOverview.mp4"
+				"type": "mp4",
+				"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 			}]
         }
     ],
@@ -40,15 +41,21 @@
             "placeholder": "abc"
         },{
             "component_type": "media",
+            "title": "media",
             "details": [{
 				"name": "screenshot",
 				"type": "png",
-				"src": "companyScreenShot1.png"
+				"src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24798-752x499.jpg"
+            },
+            {
+				"name": "screenshot",
+				"type": "png",
+				"src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
 			},
 			{
 				"name": "video",
-				"type": "mp5",
-				"src": "tagnosOverview.mp4"
+				"type": "mp4",
+				"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 			}]
         }],
         "children": [{
@@ -65,15 +72,16 @@
                 "placeholder": "abc"
             },{
                 "component_type": "media",
+                "title": "media",
                 "details": [{
                     "name": "screenshot",
                     "type": "png",
-                    "src": "companyScreenShot1.png"
+                    "src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
                 },
                 {
                     "name": "video",
-                    "type": "mp5",
-                    "src": "tagnosOverview.mp4"
+                    "type": "mp4",
+                    "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 }]
             }],
             "children": [{
@@ -85,32 +93,42 @@
                     "placeholder": "abc"
                 },
                 {
-                    "component_type": "textareastatus",
+                    "component_type": "textandstatus",
                     "title": "roles and users",
                     "placeholder": "abc",
-                    "status":[
+                    "details":[
                         {
                             "title": "status",
-                            "ga": 1,
-                            "beta": 2
+                            "options": [
+                                {"value": 1, "data": "ga"},
+                                {"value": 2, "data": "beta"}
+                            ]
                         },
                         {
                             "title": "access",
-                            "internal": 1,
-                            "tableau": 2
+                            "options": [
+                                {"value": 1, "data": "internal"},
+                                {"value": 2, "data": "tableau"}
+                            ]
                         }
                     ]
                 },{
                     "component_type": "media",
+                    "title": "media",
                     "details": [{
                         "name": "screenshot",
                         "type": "png",
-                        "src": "companyScreenShot1.png"
+                        "src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
                     },
                     {
                         "name": "video",
-                        "type": "mp5",
-                        "src": "tagnosOverview.mp4"
+                        "type": "mp4",
+                        "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    },
+                    {
+                        "name": "screenshot",
+                        "type": "png",
+                        "src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
                     }]
                 },{
                     "component_type": "textarea",
@@ -120,7 +138,97 @@
                     "component_type": "textarea",
                     "title": "data supported",
                     "placeholder": "abc"
-                }]
+                }],
+                "children": [
+                    {
+                        "name": "Registration View",
+                        "type": "Screen - registration view",
+                        "info":[{
+                            "component_type": "textarea",
+                            "title": "what does the screen do",
+                            "placeholder": "abc"
+                        },
+                        {
+                            "component_type": "textandstatus",
+                            "title": "roles and users",
+                            "placeholder": "abc",
+                            "details":[
+                                {
+                                    "title": "status",
+                                    "options": [
+                                        {"value": 1, "data": "ga"},
+                                        {"value": 2, "data": "beta"}
+                                    ]
+                                }
+                            ]
+                        },{
+                            "component_type": "media",
+                            "title": "media",
+                            "details": [{
+                                "name": "screenshot",
+                                "type": "png",
+                                "src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
+                            },
+                            {
+                                "name": "video",
+                                "type": "mp4",
+                                "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            }]
+                        },{
+                            "component_type": "textarea",
+                            "title": "integrations needed",
+                            "placeholder": "abc"
+                        },{
+                            "component_type": "textarea",
+                            "title": "data supported",
+                            "placeholder": "abc"
+                        }]
+                    },
+                    {
+                        "name": "room view",
+                        "type": "Screen - room view",
+                        "info":[{
+                            "component_type": "textarea",
+                            "title": "what does the screen do",
+                            "placeholder": "abc"
+                        },
+                        {
+                            "component_type": "textandstatus",
+                            "title": "roles and users",
+                            "placeholder": "abc",
+                            "details":[
+                                {
+                                    "title": "access",
+                                    "options": [
+                                        {"value": 1, "data": "internal"},
+                                        {"value": 2, "data": "tableau"}
+                                    ]
+                                }
+                            ]
+                        },{
+                            "component_type": "media",
+                            "title": "media",
+                            "details": [{
+                                "name": "screenshot",
+                                "type": "png",
+                                "src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
+                            },
+                            {
+                                "name": "video",
+                                "type": "mp4",
+                                "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            }]
+                        },{
+                            "component_type": "textarea",
+                            "title": "integrations needed",
+                            "placeholder": "abc"
+                        },{
+                            "component_type": "textarea",
+                            "title": "data supported",
+                            "placeholder": "abc"
+                        }]
+                    }
+                ]
             }]
         }]
     }]

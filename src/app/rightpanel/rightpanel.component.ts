@@ -15,7 +15,6 @@ export class RightpanelComponent implements OnInit {
   }
 
   ngOnChanges(){
-    console.log(this.ctrlData);
     
   }
 

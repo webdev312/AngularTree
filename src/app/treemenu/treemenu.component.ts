@@ -153,7 +153,7 @@ const TREE_DATA: MenuNode[] = [
   }
 ];
 
-var treedata : MenuNode = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
+var treedata : MenuNode[] = [];
 var arrcolor : string[] = [
   "#25ace0",
   "#243e8f",
@@ -174,14 +174,17 @@ export class TreemenuComponent implements OnInit {
 
   constructor(private appSettingsService : HttpserviceService ) {
     appSettingsService.getJSON().subscribe(data => {
-      var tdata : MenuNode[] = [];
-      tdata.push(this.convertJson2Tree(treedata, data, 0));
-      this.dataSource.data = tdata;
-      this.treeControl.dataNodes = tdata;
+      this.convertJson2Tree(data, 0);
+      this.dataSource.data = treedata;
+      this.treeControl.dataNodes = treedata;
+      this.onSetTitle(treedata[0]);
+      this.onSetRightPanel(treedata[0]);
+
+      console.log(treedata);
     });
   }
   
-  convertJson2Tree(tree, data, depth){
+  convertJson2Tree(data, depth){
     if (depth > 0){
       var arrtree = [];
       for (var i = 0; i < data.length; i ++){
@@ -192,21 +195,25 @@ export class TreemenuComponent implements OnInit {
         eachtree.color = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth];
         eachtree.bordercolor = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth - 1];
         if (data[i].children != undefined){
-          eachtree.children = this.convertJson2Tree(tree.children, data[i].children, depth+1);
+          eachtree.children = this.convertJson2Tree(data[i].children, depth+1);
+          if (eachtree.children == undefined) eachtree.children = [];
+        }else{
+          eachtree.children = [];
         }
         arrtree.push(eachtree);
       }
       return arrtree;
     }else{
-      tree.name = data.name;
-      tree.title = data.type;
-      tree.rpanel = data.info;
-      tree.color = arrcolor[0];
-      tree.bordercolor = arrcolor[0];
+      treedata[0] = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
+      treedata[0].name = data.name;
+      treedata[0].title = data.type;
+      treedata[0].rpanel = data.info;
+      treedata[0].color = arrcolor[0];
+      treedata[0].bordercolor = arrcolor[0];
       if (data.children != undefined){
-        tree.children = this.convertJson2Tree(tree, data.children, depth+1);
+        treedata[0].children = this.convertJson2Tree(data.children, depth+1);
       }
-      return tree;
+      return treedata;
     }
   }
 
@@ -234,8 +241,7 @@ export class TreemenuComponent implements OnInit {
   hasChild = (_: number, node: MenuNode) => !!node.children && node.children.length > 0;
   
   ngOnInit() {
-    this.onSetTitle(TREE_DATA[0]);
-    this.onSetRightPanel(TREE_DATA[0]);
+    
   }
 
 }
