@@ -39,23 +39,28 @@
             "details": [
                 {
                     "name": "PDF",
-                    "src": "./assets/files/pdf/1.pdf"
+                    "src": "./assets/files/pdf/sample.pdf",
+                    "filename": "sample.pdf"
                 },
                 {
                     "name": "PDF",
-                    "src": "./assets/files/pdf/2.pdf"
+                    "src": "./assets/files/pdf/sample.pdf",
+                    "filename": "sample.pdf"
                 },
                 {
                     "name": "PPT",
-                    "src": "./assets/files/ppt/1.ppt"
+                    "src": "./assets/files/ppt/pptexamples.ppt",
+                    "filename": "pptexamples.ppt"
                 },
                 {
                     "name": "PDF",
-                    "src": "./assets/files/pdf/1.pdf"
+                    "src": "./assets/files/pdf/sample.pdf",
+                    "filename": "sample.pdf"
                 },
                 {
                     "name": "PDF",
-                    "src": "./assets/files/pdf/2.pdf"
+                    "src": "./assets/files/pdf/sample.pdf",
+                    "filename": "sample.pdf"
                 }
             ]
         }
