@@ -6,6 +6,14 @@
         <mat-card-content *ngIf="control.component_type == 'textarea'">
             <textarea matInput placeholder="{{control.placeholder}}" class="mat-card-textarea"></textarea>
         </mat-card-content>
+        <mat-card-content *ngIf="control.component_type == 'listarea'">
+            <mat-list role="list" class="mat-list">
+                <mat-list-item *ngFor="let item of control.details" role="listitem">
+                    <mat-icon mat-list-icon class="mat-list-dot">lens</mat-icon>
+                    {{item}}
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
         <mat-card-content *ngIf="control.component_type == 'media'">
             <mat-carousel proportion="35" slides="{{control.details.length}}" [hideArrows]="false" [hideIndicators]="false" color="primary" [autoplay]="false">
                 <mat-carousel-slide

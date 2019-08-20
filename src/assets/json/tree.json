@@ -7,9 +7,16 @@
 			"placeholder": "abcd"
 		},
 		{
-			"component_type": "textarea",
+			"component_type": "listarea",
 			"title": "benefit",
-			"placeholder": "abcd"
+			"details": [
+                "abcd",
+                "abcd1",
+                "abcd2",
+                "abcd3",
+                "abcd4",
+                "abcd5"
+            ]
 		},
 		{
 			"component_type": "media",

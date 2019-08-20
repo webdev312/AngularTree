@@ -70,3 +70,17 @@ textarea{
     resize: none !important;
 }
 
+.mat-list{
+    overflow-y: scroll;
+    height: 130px;
+    background-color: rgba(239, 239, 239, 1);
+    text-transform: initial;
+    border-radius: 4px;
+}
+.mat-list-item{
+    height: 36px !important;
+}
+.mat-list-dot{
+    font-size: 14px !important;
+    margin-top: 10px;
+}
