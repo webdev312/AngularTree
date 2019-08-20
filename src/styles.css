@@ -14,7 +14,7 @@ body{
    align-items: flex-start !important;
 }
 .mat-grid-tile:last-child .mat-figure {
-    justify-content: flex-end !important ;
+    justify-content: flex-start !important ;
     align-items: flex-start !important;
  }
 .mat-grid-tile{
@@ -35,7 +35,7 @@ body{
 }
 
 .carousel-slide{
-    /* height: 120px !important; */
+    height: 134px !important;
 }
 
 .carousel-indicators{
@@ -50,6 +50,23 @@ body{
 .carousel-indicators > button{
     width: 14px !important;
     height: 14px !important;
+}
+
+.carousel-indicators{
+    bottom: 8px !important;
+}
+
+.carousel > .mat-icon-button{
+    margin-top: -20px;
+    color: white;
+}
+
+.carousel > button:first-of-type{
+    left: 20px !important;
+}
+
+.carousel > button:last-of-type{
+    right: 20px !important;
 }
 
 .carousel-list{

@@ -1,13 +1,19 @@
+:host{
+    width: 100%;
+}
+
 .report-panel{
     margin-right: 36px;
     margin-top: 8px;
 }
 
 .mat-card{
-    min-width: 350px;
+    width: calc(100% - 40px);
     min-height: 180px;
     max-height: 180px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     box-shadow: none;
     text-transform: uppercase;
     letter-spacing: 0.1ch;

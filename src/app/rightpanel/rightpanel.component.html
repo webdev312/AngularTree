@@ -7,7 +7,7 @@
             <textarea matInput placeholder="{{control.placeholder}}" class="mat-card-textarea"></textarea>
         </mat-card-content>
         <mat-card-content *ngIf="control.component_type == 'media'">
-            <mat-carousel maxWidth="400px" proportion="35" slides="{{control.details.length}}" [hideIndicators]="false" color="primary" [autoplay]="false">
+            <mat-carousel proportion="35" slides="{{control.details.length}}" [hideArrows]="false" [hideIndicators]="false" color="primary" [autoplay]="false">
                 <mat-carousel-slide
                     #matCarouselSlide
                     class="mat-slide-tab"
