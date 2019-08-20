@@ -37,5 +37,17 @@
                 </mat-radio-group>
             </div>
         </mat-card-content>
+        <mat-card-content *ngIf="control.component_type == 'download'">
+            <mat-carousel class="mat-file-carousel" proportion="35" slides="{{control.details.length}}" [hideArrows]="false" [hideIndicators]="false" color="primary" [autoplay]="false">
+                <mat-carousel-slide
+                    #matCarouselSlide
+                    class="mat-slide-tab"
+                    *ngFor="let slide of control.details; let i = index"
+                    overlayColor="#efefef">
+                    <img *ngIf="slide.name == 'PDF'" (click)="onDownload(slide.src)" src="./assets/icons/pdf.png" class="mat-slide-content">
+                    <img *ngIf="slide.name == 'PPT'" (click)="onDownload(slide.src)" src="./assets/icons/ppt.png" class="mat-slide-content">
+                </mat-carousel-slide>
+            </mat-carousel>
+        </mat-card-content>
     </mat-card>
 </div>

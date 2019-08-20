@@ -92,3 +92,10 @@ body{
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
     border-color: #25ace0 !important;
 }
+
+.mat-file-carousel .carousel-slide-content{
+    text-align: center;
+}
+.mat-file-carousel img{
+    width: initial !important;
+}

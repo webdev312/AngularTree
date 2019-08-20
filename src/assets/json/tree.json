@@ -32,7 +32,33 @@
 					"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 				}
 			]
-		}
+        },
+        {
+            "component_type": "download",
+            "title": "PDF/PPT Download",
+            "details": [
+                {
+                    "name": "PDF",
+                    "src": "./assets/files/pdf/1.pdf"
+                },
+                {
+                    "name": "PDF",
+                    "src": "./assets/files/pdf/2.pdf"
+                },
+                {
+                    "name": "PPT",
+                    "src": "./assets/files/ppt/1.ppt"
+                },
+                {
+                    "name": "PDF",
+                    "src": "./assets/files/pdf/1.pdf"
+                },
+                {
+                    "name": "PDF",
+                    "src": "./assets/files/pdf/2.pdf"
+                }
+            ]
+        }
 	],
 	"children": [{
 			"name": "OR",

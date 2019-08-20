@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-rightpanel',
@@ -16,6 +17,12 @@ export class RightpanelComponent implements OnInit {
 
   ngOnChanges(){
     
+  }
+
+  onDownload(path){
+    var str_download_name = path.replace(/^.*[\\\/]/, '');
+    saveAs(path, str_download_name);
+    console.log(path);
   }
 
 }
