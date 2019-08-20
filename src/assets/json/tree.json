@@ -8,7 +8,7 @@
 		},
 		{
 			"component_type": "listarea",
-			"title": "benefit",
+			"title": "benefitss",
 			"details": [
                 "abcd",
                 "abcd1",
@@ -43,9 +43,16 @@
 					"placeholder": "abc"
 				},
 				{
-					"component_type": "textarea",
-					"title": "benefits",
-					"placeholder": "abc"
+					"component_type": "listarea",
+                    "title": "benefits",
+                    "details": [
+                        "abcd",
+                        "abcd1",
+                        "abcd2",
+                        "abcd3",
+                        "abcd4",
+                        "abcd5"
+                    ]
 				}, {
 					"component_type": "media",
 					"title": "media",
@@ -76,9 +83,16 @@
 							"placeholder": "abc"
 						},
 						{
-							"component_type": "textarea",
-							"title": "benefits",
-							"placeholder": "abc"
+							"component_type": "listarea",
+                            "title": "benefits",
+                            "details": [
+                                "abcd",
+                                "abcd1",
+                                "abcd2",
+                                "abcd3",
+                                "abcd4",
+                                "abcd5"
+                            ]
 						}, {
 							"component_type": "media",
 							"title": "media",
@@ -270,9 +284,16 @@
 							"placeholder": "abc"
 						},
 						{
-							"component_type": "textarea",
-							"title": "benefits",
-							"placeholder": "abc"
+							"component_type": "listarea",
+                            "title": "benefits",
+                            "details": [
+                                "abcd",
+                                "abcd1",
+                                "abcd2",
+                                "abcd3",
+                                "abcd4",
+                                "abcd5"
+                            ]
 						}, {
 							"component_type": "media",
 							"title": "media",
@@ -465,9 +486,16 @@
 							"placeholder": "abc"
 						},
 						{
-							"component_type": "textarea",
-							"title": "benefits",
-							"placeholder": "abc"
+							"component_type": "listarea",
+                            "title": "benefits",
+                            "details": [
+                                "abcd",
+                                "abcd1",
+                                "abcd2",
+                                "abcd3",
+                                "abcd4",
+                                "abcd5"
+                            ]
 						}, {
 							"component_type": "media",
 							"title": "media",
@@ -710,9 +738,16 @@
 						"placeholder": "abc"
 					},
 					{
-						"component_type": "textarea",
-						"title": "benefits",
-						"placeholder": "abc"
+						"component_type": "listarea",
+                        "title": "benefits",
+                        "details": [
+                            "abcd",
+                            "abcd1",
+                            "abcd2",
+                            "abcd3",
+                            "abcd4",
+                            "abcd5"
+                        ]
 					}, {
 						"component_type": "media",
 						"title": "media",
