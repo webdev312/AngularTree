@@ -44,9 +44,9 @@
                     class="mat-slide-tab"
                     *ngFor="let slide of control.details; let i = index"
                     overlayColor="#efefef">
-                    <img *ngIf="slide.name == 'PDF'" (click)="onDownload(slide.src)" src="./assets/icons/pdf.png" class="mat-slide-content" style="height: 80% !important;">
-                    <img *ngIf="slide.name == 'PPT'" (click)="onDownload(slide.src)" src="./assets/icons/ppt.png" class="mat-slide-content" style="height: 80% !important;">
-                    <div style="width: 100%; height: 20%; display: flex; position: absolute; flex-direction: column; align-items: center; justify-content: center">
+                    <img *ngIf="slide.name == 'PDF'" (click)="onDownload(slide.src)" src="./assets/icons/pdf.png" class="mat-slide-content" style="height: 80% !important; cursor: pointer;">
+                    <img *ngIf="slide.name == 'PPT'" (click)="onDownload(slide.src)" src="./assets/icons/ppt.png" class="mat-slide-content" style="height: 80% !important; cursor: pointer;">
+                    <div style="width: 100%; height: 20%; display: flex; position: absolute; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;">
                         <h3>{{slide.filename}}</h3>
                     </div>
                 </mat-carousel-slide>
