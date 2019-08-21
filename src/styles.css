@@ -62,11 +62,11 @@ body{
 }
 
 .carousel > button:first-of-type{
-    left: 20px !important;
+    left: 10px !important;
 }
 
 .carousel > button:last-of-type{
-    right: 20px !important;
+    right: 10px !important;
 }
 
 .carousel-list{
