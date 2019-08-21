@@ -85,3 +85,9 @@ textarea{
     font-size: 14px !important;
     margin-top: 12px;
 }
+.mat-slide-content{
+    width: initial !important;
+}
+.mat-slide-content:focus{
+    outline: none;
+}
