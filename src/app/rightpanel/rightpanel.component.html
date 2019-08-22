@@ -1,3 +1,6 @@
+<div *ngIf="node_flag_full" class="full-screen" (click)="node_flag_full = !node_flag_full">
+    <img src="{{node_src_full}}" id='full-img' class="full-img">
+</div>
 <div class="report-panel">
     <mat-card *ngFor="let control of ctrlData" class="mat-card">
         <mat-card-header class="mat-card-header-control">
@@ -21,7 +24,7 @@
                     class="mat-slide-tab"
                     *ngFor="let slide of control.details; let i = index"
                     overlayColor="#efefef">
-                    <img *ngIf="slide.name == 'screenshot'" src="{{slide.src}}" class="mat-slide-content">
+                    <img *ngIf="slide.name == 'screenshot'" src="{{slide.src}}" class="mat-slide-content" (click)="onClickFull(slide.src, true)">
                     <video *ngIf="slide.name == 'video'" controls class="mat-slide-content">
                         <source src="{{slide.src}}" type="video/{{slide.type}}">
                     </video>
