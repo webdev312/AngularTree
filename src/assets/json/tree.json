@@ -37,37 +37,6 @@
 					"src": "https://i.imgur.com/L43fkzs.jpg"
 				}
 			]
-        },
-        {
-            "component_type": "download",
-            "title": "PDF/PPT Download",
-            "details": [
-                {
-                    "name": "PDF",
-                    "src": "./assets/files/pdf/sample.pdf",
-                    "filename": "sample.pdf"
-                },
-                {
-                    "name": "PDF",
-                    "src": "./assets/files/pdf/sample.pdf",
-                    "filename": "sample.pdf"
-                },
-                {
-                    "name": "PPT",
-                    "src": "./assets/files/ppt/pptexamples.ppt",
-                    "filename": "pptexamples.ppt"
-                },
-                {
-                    "name": "PDF",
-                    "src": "./assets/files/pdf/sample.pdf",
-                    "filename": "sample.pdf"
-                },
-                {
-                    "name": "PDF",
-                    "src": "./assets/files/pdf/sample.pdf",
-                    "filename": "sample.pdf"
-                }
-            ]
         }
 	],
 	"children": [{
@@ -108,6 +77,37 @@
 							"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 						}
 					]
+				},
+				{
+					"component_type": "download",
+					"title": "PDF/PPT Download",
+					"details": [
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PPT",
+							"src": "./assets/files/ppt/pptexamples.ppt",
+							"filename": "pptexamples.ppt"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						}
+					]
 				}
 			],
 			"children": [{
@@ -143,6 +143,37 @@
 									"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 								}
 							]
+						},
+						{
+							"component_type": "download",
+							"title": "PDF/PPT Download",
+							"details": [
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PPT",
+									"src": "./assets/files/ppt/pptexamples.ppt",
+									"filename": "pptexamples.ppt"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								}
+							]
 						}
 					],
 					"children": [{
@@ -152,6 +183,18 @@
 								"component_type": "textarea",
 								"title": "what does the screen do",
 								"placeholder": "abc"
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							},
 							{
 								"component_type": "textandstatus",
@@ -220,6 +263,18 @@
 										"placeholder": "abc"
 									},
 									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
+									},
+									{
 										"component_type": "textandstatus",
 										"title": "roles and users",
 										"placeholder": "abc",
@@ -267,6 +322,18 @@
 										"component_type": "textarea",
 										"title": "what does the screen do",
 										"placeholder": "abc"
+									},
+									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
 									},
 									{
 										"component_type": "textandstatus",
@@ -344,6 +411,37 @@
 									"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 								}
 							]
+						},
+						{
+							"component_type": "download",
+							"title": "PDF/PPT Download",
+							"details": [
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PPT",
+									"src": "./assets/files/ppt/pptexamples.ppt",
+									"filename": "pptexamples.ppt"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								}
+							]
 						}
 					],
 					"children": [{
@@ -353,6 +451,18 @@
 								"component_type": "textarea",
 								"title": "what does the screen do",
 								"placeholder": "abc"
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							},
 							{
 								"component_type": "textandstatus",
@@ -421,6 +531,18 @@
 										"placeholder": "abc"
 									},
 									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
+									},
+									{
 										"component_type": "textandstatus",
 										"title": "roles and users",
 										"placeholder": "abc",
@@ -468,6 +590,18 @@
 										"component_type": "textarea",
 										"title": "what does the screen do",
 										"placeholder": "abc"
+									},
+									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
 									},
 									{
 										"component_type": "textandstatus",
@@ -546,6 +680,37 @@
 									"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 								}
 							]
+						},
+						{
+							"component_type": "download",
+							"title": "PDF/PPT Download",
+							"details": [
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PPT",
+									"src": "./assets/files/ppt/pptexamples.ppt",
+									"filename": "pptexamples.ppt"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								},
+								{
+									"name": "PDF",
+									"src": "./assets/files/pdf/sample.pdf",
+									"filename": "sample.pdf"
+								}
+							]
 						}
 					],
 					"children": [{
@@ -555,6 +720,18 @@
 								"component_type": "textarea",
 								"title": "what does the screen do",
 								"placeholder": "abc"
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							},
 							{
 								"component_type": "textandstatus",
@@ -623,6 +800,18 @@
 										"placeholder": "abc"
 									},
 									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
+									},
+									{
 										"component_type": "textandstatus",
 										"title": "roles and users",
 										"placeholder": "abc",
@@ -670,6 +859,18 @@
 										"component_type": "textarea",
 										"title": "what does the screen do",
 										"placeholder": "abc"
+									},
+									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
 									},
 									{
 										"component_type": "textandstatus",
@@ -763,6 +964,37 @@
 					"component_type": "textarea",
 					"title": "data supported",
 					"placeholder": "abc"
+				},
+				{
+					"component_type": "download",
+					"title": "PDF/PPT Download",
+					"details": [
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PPT",
+							"src": "./assets/files/ppt/pptexamples.ppt",
+							"filename": "pptexamples.ppt"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						},
+						{
+							"name": "PDF",
+							"src": "./assets/files/pdf/sample.pdf",
+							"filename": "sample.pdf"
+						}
+					]
 				}
 			],
 			"children": [{
@@ -798,6 +1030,37 @@
 								"src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 							}
 						]
+					},
+					{
+						"component_type": "download",
+						"title": "PDF/PPT Download",
+						"details": [
+							{
+								"name": "PDF",
+								"src": "./assets/files/pdf/sample.pdf",
+								"filename": "sample.pdf"
+							},
+							{
+								"name": "PDF",
+								"src": "./assets/files/pdf/sample.pdf",
+								"filename": "sample.pdf"
+							},
+							{
+								"name": "PPT",
+								"src": "./assets/files/ppt/pptexamples.ppt",
+								"filename": "pptexamples.ppt"
+							},
+							{
+								"name": "PDF",
+								"src": "./assets/files/pdf/sample.pdf",
+								"filename": "sample.pdf"
+							},
+							{
+								"name": "PDF",
+								"src": "./assets/files/pdf/sample.pdf",
+								"filename": "sample.pdf"
+							}
+						]
 					}
 				],
 				"children": [{
@@ -807,6 +1070,18 @@
 								"component_type": "textarea",
 								"title": "what does the screen do",
 								"placeholder": "abc"
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							},
 							{
 								"component_type": "textandstatus",
@@ -856,6 +1131,18 @@
 										"src": "http://www.digitalcamerareview.com/wp-content/uploads/sites/5/24820-752x499.jpg"
 									}
 								]
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							}, {
 								"component_type": "textarea",
 								"title": "integrations needed",
@@ -873,6 +1160,18 @@
 										"component_type": "textarea",
 										"title": "what does the screen do",
 										"placeholder": "abc"
+									},
+									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
 									},
 									{
 										"component_type": "textandstatus",
@@ -924,6 +1223,18 @@
 										"placeholder": "abc"
 									},
 									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
+									},
+									{
 										"component_type": "textandstatus",
 										"title": "roles and users",
 										"placeholder": "abc",
@@ -973,6 +1284,18 @@
 								"component_type": "textarea",
 								"title": "what does the report do",
 								"placeholder": "abc"
+							},
+							{
+								"component_type": "listarea",
+								"title": "how we do it",
+								"details": [
+									"abcd",
+									"abcd1",
+									"abcd2",
+									"abcd3",
+									"abcd4",
+									"abcd5"
+								]
 							},
 							{
 								"component_type": "textandstatus",
@@ -1041,6 +1364,18 @@
 										"placeholder": "abc"
 									},
 									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
+									},
+									{
 										"component_type": "textandstatus",
 										"title": "roles and users",
 										"placeholder": "abc",
@@ -1088,6 +1423,18 @@
 										"component_type": "textarea",
 										"title": "what does the report do",
 										"placeholder": "abc"
+									},
+									{
+										"component_type": "listarea",
+										"title": "how we do it",
+										"details": [
+											"abcd",
+											"abcd1",
+											"abcd2",
+											"abcd3",
+											"abcd4",
+											"abcd5"
+										]
 									},
 									{
 										"component_type": "textandstatus",
