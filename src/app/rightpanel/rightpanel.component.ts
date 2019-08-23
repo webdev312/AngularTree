@@ -11,13 +11,13 @@ import { saveAs } from 'file-saver';
 
 export class RightpanelComponent implements OnInit {
   @Input() ctrlData: any;
-  node_src_full: any;
-  node_flag_full: any;
+  isFullscreen: any;
+  imgSrcFull: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.node_flag_full = false;
+    this.isFullscreen = false;
   }
 
   ngOnChanges(){
@@ -33,7 +33,7 @@ export class RightpanelComponent implements OnInit {
   onClickFull(src, isImg){
     console.log(src);
     console.log(isImg);
-    this.node_flag_full = !this.node_flag_full;
-    this.node_src_full = src;
+    this.isFullscreen = !this.isFullscreen;
+    this.imgSrcFull = src;
   }
 }

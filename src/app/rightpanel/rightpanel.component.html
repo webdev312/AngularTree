@@ -1,5 +1,5 @@
-<div *ngIf="node_flag_full" class="full-screen" (click)="node_flag_full = !node_flag_full">
-    <img src="{{node_src_full}}" id='full-img' class="full-img">
+<div *ngIf="isFullscreen" class="full-screen" (click)="isFullscreen = !isFullscreen">
+    <img src="{{imgSrcFull}}" id='full-img' class="full-img">
 </div>
 <div class="report-panel">
     <mat-card *ngFor="let control of ctrlData" class="mat-card">
