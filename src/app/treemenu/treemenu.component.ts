@@ -77,7 +77,7 @@ export class TreemenuComponent implements OnInit {
   }
 
   onExpandAll(){
-    this.treeControl.expandAll();
+    // this.treeControl.expandAll();
   }
 
   onCollapseAll(){
