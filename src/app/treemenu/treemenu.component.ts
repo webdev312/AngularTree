@@ -45,23 +45,7 @@ export class TreemenuComponent implements OnInit {
   
   convertJson2Tree(data, depth){
     if (depth > 0){
-      var arrtree = [];
-      for (var i = 0; i < data.length; i ++){
-        var eachtree : MenuNode = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
-        eachtree.name = data[i].name;
-        eachtree.title = data[i].type;
-        eachtree.rpanel = data[i].info;
-        eachtree.color = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth];
-        eachtree.bordercolor = (depth >= arrcolor.length)? arrcolor[arrcolor.length - 1] : arrcolor[depth - 1];
-        if (data[i].children != undefined){
-          eachtree.children = this.convertJson2Tree(data[i].children, depth+1);
-          if (eachtree.children == undefined) eachtree.children = [];
-        }else{
-          eachtree.children = [];
-        }
-        arrtree.push(eachtree);
-      }
-      return arrtree;
+      
     }else{
       treedata[0] = {name: "", title: "", color: "", bordercolor: "", children: [], rpanel: []};
       treedata[0].name = data.name;
