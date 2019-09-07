@@ -1,6 +1,11 @@
 # Demo URL
 http://3.89.64.48:4200
 
+# Project Installation
+
+1. npm install
+2. npm start
+
 # Angtree
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
