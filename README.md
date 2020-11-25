@@ -1,5 +1,5 @@
 # Demo URL
- http://3.89.64.48:4200
+ http://54.173.219.234:4200
 
 # Project Installation
 
